@@ -1,0 +1,19 @@
+* {
+    color: #000;
+    box-sizing: border-box;
+}
+.addstore-title {
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+/*.addstore-form {
+    background: #FFF;
+}*/
+.basic-info {
+    margin-top: 25px;
+}
+.basic-title {
+    font-size: 16px;
+    margin-left: 40px;
+}

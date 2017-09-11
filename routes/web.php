@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('main.index');
 });
+
+Route::get('/addstore', function () {
+    return view('store.addstore');
+});
+
+Route::get('/editstore', function () {
+    return view('store.editstore');
+});
