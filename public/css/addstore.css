@@ -7,13 +7,25 @@
     font-size: 24px;
     font-weight: bold;
 }
-/*.addstore-form {
-    background: #FFF;
-}*/
 .basic-info {
     margin-top: 25px;
+    padding-bottom: 20px;
 }
 .basic-title {
     font-size: 16px;
     margin-left: 40px;
+}
+.basic-date {
+    display: block;
+    margin-left: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.basic-date input[type="text"] {
+    width: 100%;
+    max-width: 600px;
+    min-width: 200px;
+    height: 25px;
+    border: 0 solid #FFF;
+    border-bottom: 1px dashed #000;
 }
