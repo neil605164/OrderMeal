@@ -55,6 +55,7 @@ body {
 }
 .header-nav {
 	float: right;
+	margin-top: 5px;
 }
 .header-nav-left,.header-nav-right {
 	float: left;
@@ -157,9 +158,10 @@ body {
 }
 .content {
 	margin: 0 auto;
-	margin-top: 30px;
 	max-width: 800px;
 	background: #FFF;
+	margin-top: 30px;
 	border-radius: 5px;
-	box-shadow: 2px -1px 5px rgba(122,119,119,.85);
+	margin-bottom: 20px;
+	box-shadow: 3px -3px 6px rgba(122,119,119,.85);
 }
