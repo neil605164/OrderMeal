@@ -54,6 +54,7 @@ body {
     background: rgba(8,7,7,.9);
 }
 .header-nav {
+	width: 270px;
 	float: right;
 	margin-top: 5px;
 }
@@ -135,6 +136,30 @@ body {
     background-repeat: no-repeat;
     background-image: url(../images/notebook-icon-hover.png);
 }
+.header-register-icon {
+    background-size: 15px 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/register-icon.png);
+}
+.header-register-icon:hover {
+    background-size: 15px 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/register-icon-hover.png);
+}
+.header-door-icon {
+    background-size: 15px 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/door-icon.png);
+}
+.header-door-icon:hover {
+    background-size: 15px 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/door-icon-hover.png);
+}
 .keyword-find {
 	float: left;
 	width: 60px;
@@ -148,6 +173,9 @@ body {
 .header-find {
 	float: right;
 }
+.header-find li {
+	float: left;
+}
 .header-find li a {
 	width: 30px;
     height: 30px;
@@ -158,9 +186,11 @@ body {
 }
 .content {
 	margin: 0 auto;
-	max-width: 800px;
+	max-width: 1800px;
 	background: #FFF;
 	margin-top: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
 	border-radius: 5px;
 	margin-bottom: 20px;
 	box-shadow: 3px -3px 6px rgba(122,119,119,.85);

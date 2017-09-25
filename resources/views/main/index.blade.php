@@ -5,7 +5,10 @@
 	<title>Laravel 訂便當系統</title>
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/login.css">
 	<link rel="stylesheet" href="css/addstore.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/addstore.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -23,6 +26,13 @@
 					<input type="text" class="keyword-find" placeholder="關鍵字...">
 					<ul class="header-find">
 						<li><a href="#" class="header-search-icon" title="搜尋"></a></li>
+						<!-- 如果沒有登入 -->
+						@if(!Auth::check()){
+							<li><a href="{{ url('/register') }}" class="header-register-icon" title="註冊"></a></li>
+						}
+						@else if{
+							<li><a href="{{ url('/logout') }}" class="header-door-icon" title="登出"></a></li>
+						}@endif
 					</ul>
 				</div>
     		</div>
