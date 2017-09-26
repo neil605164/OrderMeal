@@ -1,14 +1,16 @@
 @extends('main.index')
 @section('content')
+    <script src="js/addstore.js"></script>
+    
     <h3 class="addstore-title">新增店家</h3>
-    <form class="addstore-form" action="" method="post">
+    <form class="addstore-form" action="{{ url('/checkadd') }}" method="POST">
         {{ csrf_field() }}
         <div class="info">
             <span class="title">基本資料 :</span>
-            <span class="basic-date">名稱 ：<input type="text" class="input-name" placeholder="請輸入店家名稱"></span>
-            <span class="basic-date">簡介 ：<input type="text" class="input-intr" placeholder="請輸入店家簡介"></span>
-            <span class="basic-date">電話 ：<input type="text" class="input-tel" placeholder="請輸入店家電話"></span>
-            <span class="basic-date">地址 ：<input type="text" class="input-addr" placeholder="請輸入店家地址"></span>
+            <span class="basic-date">名稱 ：<input type="text" class="input-name store-name" placeholder="請輸入店家名稱" required></span>
+            <span class="basic-date">簡介 ：<input type="text" class="input-intr store-intr" placeholder="請輸入店家簡介"></span>
+            <span class="basic-date">電話 ：<input type="text" class="input-tel store-tel" placeholder="請輸入店家電話" required></span>
+            <span class="basic-date">地址 ：<input type="text" class="input-addr store-addr" placeholder="請輸入店家地址" required></span>
         </div>
 
         <div class="info">
@@ -51,7 +53,7 @@
         </div>
 
         <div class="info">
-            <input type="button" class="addstore-btn" value="送出">
+            <input type="submit" class="addstore-btn" value="送出">
         </div>
     </form>
 @endsection

@@ -27,14 +27,12 @@ Route::group(['middleware' => 'auth'], function () {
         return view('store.addstore');
     });
 
+    Route::post('/checkadd', 'StoreController@SaveStore');
+
     Route::get('/editstore', function () {
         return view('store.editstore');
     });
 });
 
 
-// Route::get('/logout', array(
-// 		'as' => 'account-sign-out',
-// 		'uses' => 'Auth\LoginController@logout'
-// 	));
 // Route::get('/home', 'HomeController@index')->name('home');

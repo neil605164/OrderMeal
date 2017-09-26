@@ -31,9 +31,9 @@
     border: 0 solid #FFF;
     border-bottom: 1px dashed #000;
 }
-.info input[type="text"]:focus {
+/*.info input[type="text"]:focus {
     background: rgb(143,236,142);
-}
+}*/
 .menu-title {
     display: block;
 }
@@ -91,4 +91,9 @@
 .addstore-btn:hover {
     cursor: pointer;
     box-shadow: 2px 2px 1px #000;
+}
+.addstore-btn:active {
+    cursor: pointer;
+    margin-top: 0.5px;
+    ox-shadow: 2px 2px 1px #000;
 }
