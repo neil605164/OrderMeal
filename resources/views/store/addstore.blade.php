@@ -1,16 +1,16 @@
 @extends('main.index')
 @section('content')
     <script src="js/addstore.js"></script>
-    
+
     <h3 class="addstore-title">新增店家</h3>
     <form class="addstore-form" action="{{ url('/checkadd') }}" method="POST">
         {{ csrf_field() }}
         <div class="info">
             <span class="title">基本資料 :</span>
-            <span class="basic-date">名稱 ：<input type="text" class="input-name store-name" placeholder="請輸入店家名稱" required></span>
-            <span class="basic-date">簡介 ：<input type="text" class="input-intr store-intr" placeholder="請輸入店家簡介"></span>
-            <span class="basic-date">電話 ：<input type="text" class="input-tel store-tel" placeholder="請輸入店家電話" required></span>
-            <span class="basic-date">地址 ：<input type="text" class="input-addr store-addr" placeholder="請輸入店家地址" required></span>
+            <span class="basic-date basic-name">名稱 ：<input type="text" name="store-name" class="input-name store-name" placeholder="請輸入店家名稱" required><span class="error"></span></span>
+            <span class="basic-date basic-intr">簡介 ：<input type="text" name="store-intr" class="input-intr store-intr" placeholder="請輸入店家簡介"></span>
+            <span class="basic-date basic-tel">電話 ：<input type="text" name="store-tel" class="input-tel store-tel" placeholder="請輸入店家電話，格式：09xx-xxx-xxx or xx-xxxx-xxxx" required><span class="error"></span></span>
+            <span class="basic-date basic-addr">地址 ：<input type="text" name="store-addr" class="input-addr store-addr" placeholder="請輸入店家地址" required><span class="error"></span></span>
         </div>
 
         <div class="info">

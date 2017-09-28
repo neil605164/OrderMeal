@@ -23,11 +23,12 @@
     padding-bottom: 5px;
 }
 .info input[type="text"] {
-    width: 100%;
+    width: 90%;
     height: 25px;
+    display: block;
     font-size: 13px;
     min-width: 50px;
-    max-width: 600px;
+    /*max-width: 600px;*/
     border: 0 solid #FFF;
     border-bottom: 1px dashed #000;
 }
@@ -96,4 +97,14 @@
     cursor: pointer;
     margin-top: 0.5px;
     ox-shadow: 2px 2px 1px #000;
+}
+
+.error {
+    color: red;
+    padding: 3px;
+    display: none;
+    font-size: 12px;
+    margin-top: 5px;
+    border-radius: 3px;
+    border: 1px solid #FF0000;
 }

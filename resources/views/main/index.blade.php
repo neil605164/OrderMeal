@@ -7,10 +7,8 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/login.css">
 	<link rel="stylesheet" href="css/addstore.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
-	<!-- <script src="js/addstore.js"></script> -->
-	<script src="js/register.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <div class="wrap">
